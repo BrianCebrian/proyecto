@@ -3,7 +3,7 @@ $.ajax({
 	type: "POST",
 	data: {
 		api: "pedirNoticia",
-		id: window.location.search,
+		id: new URLSearchParams(window.location.search).get("id"),
 	},
 	dataType: "json",
 
