@@ -3,7 +3,7 @@ $.ajax({
 	type: "POST",
 	data: {
 		api: "pedirNoticia",
-		id: 8,
+		id: window.location.search,
 	},
 	dataType: "json",
 
