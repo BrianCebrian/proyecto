@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+		<script defer src="./login.js"></script>
+        <script defer src="./crearnoticia.js"></script>
+		<script src="https://www.google.com/recaptcha/api.js?render=6LdGIFMgAAAAAHQ4gvEt6QLUv3-3rUw8J_WnRPbi"></script>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+			integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="icon" type="image/x-icon" href="./favicon.ico" />
+        
+
+		<title>Loremus News</title>
+	</head>
+		<script> 	if (getCookie("nombre")) {
+			document.getElementById("notRegister").style.visibility = "hidden";
+			document.getElementById("divUsuario").style.visibility = "visible";
+			document.getElementById("usuario").innerHTML = getCookie("nombre");
+		}
+		function getCookie(cname) {
+			let name = cname.trim() + "=";
+			let decodedCookie = decodeURIComponent(document.cookie);
+			let ca = decodedCookie.split(";");
+			for (let i = 0; i < ca.length; i++) {
+				let c = ca[i];
+				while (c.charAt(0) == " ") {
+					c = c.substring(1);
+				}
+				if (c.indexOf(name) == 0) {
+					return c.substring(name.length, c.length);
+				}
+			}
+			return "";
+		}</script>
+		<style>
+			label {
+				width: 100px;
+				display: inline-block;
+				margin: 10px;
+			}
+			.inputError {
+				background-color: rgb(101, 0, 0);
+				border: 2px solid red;
+			}
+			.inputSuccess {
+				background-color: rgb(29, 101, 0);
+				border: 2px solid green;
+			}
+			/* .grecaptcha-badge {
+				visibility: hidden;
+			} */
+		</style>
+	</head>
+	<body>
+		<!-- <nav>
+			<a href="registrarse.html"><button>SignUp</button></a>
+			<a href="login.html"><button>SignIn</button></a>
+		</nav> -->
+		<header class="mt-0 pt-0">
+			<div class="bg-cover clearfix pt-3">
+				<h2 class="logo">Loremus News</h2>
+				<nav class="nav nav-fill mx-auto">
+					<li class="nav-item">
+						<a
+							class="nav-link"
+							href="https://www.facebook.com/Loremus-News-107014245382770"
+							target="_blank"
+							><i class="fab fa-facebook-f"></i
+						></a>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link"
+							href="https://twitter.com/LoremusNews"
+							target="_blank"
+							><i class="fab fa-twitter"></i
+						></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://www.instagram.com/loremusnews/"
+						target="_blank"
+							><i class="fab fa-instagram"></i
+						></a>
+					</li>
+				</nav>
+
+				<input
+					type="text"
+					id="nav-search"
+					class="nav-search mx-auto"
+					name=""
+					class="form-control"
+				/>
+				<div class="ml-0 mr-0 pb-1">
+					<nav class="navbar navbar-expand-md">
+						<button
+							class="navbar-toggler ml-auto"
+							data-target="#my-nav"
+							data-toggle="collapse"
+							aria-controls="my-nav"
+							aria-expanded="false"
+							onclick="myFunction(this)"
+							aria-label="Toggle navigation"
+						>
+							<span class="bar1"></span> <span class="bar2"></span>
+							<span class="bar3"></span>
+						</button>
+						<div id="my-nav" class="collapse navbar-collapse">
+							<ul class="navbar-nav mx-auto">
+								<li class="nav-item">
+									<a class="nav-link" href="./index.html">INICIO</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="./actualidad.html">ACTUALIDAD</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="./deportes.html">DEPORTES</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="./conocenos.html">CONOCENOS</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+        
+		<div id="signUp" style=" margin: 20px; padding: 20px">
+			<h2 style="color:white">Crear Noticia</h2>
+			<div>
+				<label style="color:white">Titulo:</label>
+				<input
+					type="text"
+					id="tituloNoticia"
+					placeholder="Titulo"
+					value=""
+				/>
+				<br />
+				<label style="color:white" >Texto:</label>
+				<textarea id="textoNoticia" > </textarea>
+				<br />
+				<label style="color:white" >Texto2:</label>
+				<textarea id="textoNoticia2" > </textarea>
+				<br />
+				<label style="color:white" >Texto3:</label>
+				<textarea id="textoNoticia3" > </textarea>
+                <br />
+				<label style="color:white" >Imagen:</label>
+				<input
+					type="file"
+					id="imagenNoticia"
+					placeholder=""
+					accept="image/png, .jpeg, .jpg, image/gif"
+				/><br />
+				<!-- <input id="g-recaptcha-response" name="g-recaptcha-response" /> -->                
+			</div>
+			<button id="buttonNoticia" >Enviar</button>
+		</div>
+		<footer class="container-fluid pt-5">
+			<div class="container">
+				<h2 class="logo text-center">Loremus News</h2>
+				<nav class="nav nav-fill mx-auto mt-5">
+					<li class="nav-item">
+						<a
+							class="nav-link"
+							href="https://www.facebook.com/Loremus-News-107014245382770"
+							target="_blank"
+							><i class="fab fa-facebook-f"></i
+						></a>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link"
+							href="https://twitter.com/LoremusNews"
+							target="_blank"
+							><i class="fab fa-twitter"></i
+						></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://www.instagram.com/loremusnews/"
+						target="_blank"
+							><i class="fab fa-instagram"></i
+						></a>
+					</li>
+				</nav>
+			</div>
+			<div class="copyright mt-4">
+				<p class="text-center">
+					&copy; 2022 <a href="#" class="text-white">Loremus News</a>. All
+					Rights Reserved. Design by
+					<a href="#" target="_blank" class="text-white">Loremus Web</a>.
+				</p>
+			</div>
+		</footer>
+
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/jquery-1.12.0.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/owl.carousel.min.js"></script>
+		<script src="assets/js/jquery.yu2fvl.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>

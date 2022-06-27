@@ -1,0 +1,23 @@
+-Tienda online 
+-Tienda segunda mano
+-Peliculas descargas
+-red social
+-mailing
+-red social de citas
+-compartir archivos online
+-foro
+-portal de noticias
+- videos Online
+
+
+
+6LdGIFMgAAAAAHQ4gvEt6QLUv3-3rUw8J_WnRPbi
+6LdGIFMgAAAAACA0pCfwnbYwWsujuqKJS6x3xqMb
+
+clave google: gvuorvuzojchyajy
+
+Server: sql4.freemysqlhosting.net
+Name: sql4499639
+Username: sql4499639
+Password: qyQLBwz3M6
+Port number: 3306
