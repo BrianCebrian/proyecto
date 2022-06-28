@@ -24,6 +24,7 @@ Utilizaremos de estructura de archivos la siguiente:
 - Proyecto (pagina principal todos los archivos .html .js .css .php y este .md).
 
 - Assets (seria lo mismo que libs, donde tendremos nuestras librerias).
+  [Carpeta de Librerias](./assets/)
 
 - conf (contiene un archivo php que utilicemos para las contraseñas pero ya no lo necesitaremos).
 
@@ -32,8 +33,10 @@ Utilizaremos de estructura de archivos la siguiente:
 - src (con la carpeta /images donde habran algunas imagenes utilizadas).
 
 - vendor (Carpeta incluida al proyecto).
+  [Carpeta de vendor](./vendor/)
 
 - wireframes (Aqui hemos añadido los wireframes del proyecto.)
+  [Carpeta de wireframes](./wireframes/)
 
 ## Pagina web
 
@@ -58,3 +61,17 @@ Utilizaremos de estructura de archivos la siguiente:
 
 - Pagina del apartado de Noticias creadas(1,2,3) en localhost, como se ve la noticia creada:
   ![Basededatospagina](./src/images/basededatos1.png)
+
+## Documentacion
+
+### doc1
+
+- [README.MD](./doc/entrega1/README.md)
+
+### doc 2
+
+- [README.MD](./doc/entrega2/README.md)
+
+### Licencia
+
+- [license](./LICENSE)
