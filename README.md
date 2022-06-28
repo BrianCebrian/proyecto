@@ -50,3 +50,11 @@ Utilizaremos de estructura de archivos la siguiente:
 - la base de datos funciona perfectamente en /localhost pero no via online porque la base de datos de la pagina freesqlhosting esta dando problemas y algunos fallos, la base de datos es totalmente funcional, los datos se envian bien a la base de datos y tambien los pide bien de vuelta desde localhost.
 
 - He tenido que dejarlo en localhost la opcion de `Crear Noticia` y `Noticias Creadas` por problemas de la pagina `freemysqlhosting`.
+
+- Adjunto unas imagenes de la base de datos y su funcionalidad
+
+- Base de datos despues de añadir noticias atraves del HTML en localhost:
+  ![Basededatos](./src/images/basededatos.png)
+
+- Pagina del apartado de Noticias creadas(1,2,3) en localhost, como se ve la noticia creada:
+  ![Basededatospagina](./src/images/basededatos1.png)
