@@ -16,3 +16,31 @@ Sera un portal de noticias que tendrá seis páginas: index, login, register, de
 ## Creacion de noticias desde la propia pagina
 
 Hemos creado 2 apartados en el footer que te permiten creear una noticia con imagen en una base de datos y luego en el siguiente apartado ver las noticias creadas.
+
+## Distribucion archivos
+
+Utilizaremos de estructura de archivos la siguiente:
+
+- Proyecto (pagina principal todos los archivos .html .js .css .php y este .md).
+
+- Assets (seria lo mismo que libs, donde tendremos nuestras librerias).
+
+- conf (contiene un archivo php que utilicemos para las contraseñas pero ya no lo necesitaremos).
+
+- doc (contiene entrega 1 con sus respectivos archivos y entrega2 y aparte tambien hemos añadido una pequeña descripcion en formato word que hemos utilizado un md).
+
+- src (con la carpeta /images donde habran algunas imagenes utilizadas).
+
+- vendor (Carpeta incluida al proyecto).
+
+- wireframes (Aqui hemos añadido los wireframes del proyecto.)
+
+## Pagina web
+
+- Nuestra pagina web esta ubicada en :
+- www.loremus.tk (subida desde github, hemos usado un dns hemos utilizado la pagina www.freenom.com para el dominio dns)
+
+## Pagina web DEMO
+
+- La demo esta en :
+- https://loremus.herokuapp.com/
