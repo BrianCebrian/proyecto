@@ -38,9 +38,15 @@ Utilizaremos de estructura de archivos la siguiente:
 ## Pagina web
 
 - Nuestra pagina web esta ubicada en :
-- www.loremus.tk (subida desde github, hemos usado un dns hemos utilizado la pagina www.freenom.com para el dominio dns)
+- http://www.loremus.tk (subida desde github, hemos usado un dns hemos utilizado la pagina www.freenom.com para el dominio dns)
 
 ## Pagina web DEMO
 
 - La demo esta en :
 - https://loremus.herokuapp.com/
+
+## base de datos
+
+- la base de datos funciona perfectamente en /localhost pero no via online porque la base de datos de la pagina freesqlhosting esta dando problemas y algunos fallos, la base de datos es totalmente funcional, los datos se envian bien a la base de datos y tambien los pide bien de vuelta desde localhost.
+
+- He tenido que dejarlo en localhost la opcion de `Crear Noticia` y `Noticias Creadas` por problemas de la pagina `freemysqlhosting`.
